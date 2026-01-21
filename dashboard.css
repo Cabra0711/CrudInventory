@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+    --bg-dark: #161733;       /* Fondo principal */
+    --paper-white: #F9F9F9;   /* Blanco crema Fondo de tarjetas/contenido */
+    --grid-gray: #B2B9C5;
+    --neon-pink: #FF388E;     /* Rosa Magenta (Botones principales/Títulos) */
+    --neon-cyan: #2CF1FF;     /* Turquesa (Bordes internos/Botones secundarios) */
+    --electric-yellow: #FFD300; /* Amarillo (Marco exterior/Destacados) */
+    --lime-green: #A2FF00;    /* Verde Lima (Categorías/Reviews) */
+
+    /* Colores del Banner Superior */
+    --arcade-orange: #FF5C33; 
+    --arcade-purple: #6E24A1;
+
+    
+    --font-main: 'Press Start 2P', cursive;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+}
+nav{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 2px solid black  ;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-left img{
+    height: 170px;
+}
+
+.nav-left a:hover {
+    color: var(--neon-pink);
+    transition: 0.8s;
+}
+
+.nav-left a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.principal-links li{
+    list-style: none;
+}
+
+.principal-links ul{
+    display: flex;
+    gap: 60px;
+}
+
+.nav-center{
+    flex-grow: 1;
+    max-width: 400px;
+    margin: 0 40px;
+}
+
+.input-search{
+    padding: 10px;
+}
+
+.input-nav-center{
+    background: white;
+    border-radius: 8px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right i {
+    font-size: 24px;
+    color: var(--bg-dark);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    padding-left: 20px;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    background-color: var(--bg-dark);
+    border-radius: 4px;
+}
