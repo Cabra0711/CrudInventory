@@ -32,12 +32,14 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    border-bottom: 2px solid black  ;
+    border-bottom: 2px solid var(--neon-pink)  ;
+    background-color: var(--bg-dark);
 }
 .nav-left{
     display: flex;
     align-items: center;
     gap: 30px;
+
 }
 .nav-left img{
     height: 170px;
@@ -53,6 +55,7 @@ nav{
     color: black;
     font-size: 15px;
     font-weight: 600;
+    color: var(--paper-white);
 }
 
 .principal-links li{
@@ -62,6 +65,7 @@ nav{
 .principal-links ul{
     display: flex;
     gap: 60px;
+    margin-top: 20px;
 }
 
 .nav-center{
@@ -87,20 +91,71 @@ nav{
 
 .nav-right i {
     font-size: 24px;
-    color: var(--bg-dark);
+    color: var(--paper-white);
 }
 
 .user-profile {
     display: flex;
     align-items: center;
     gap: 10px;
-    border-left: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid var(--neon-pink);
     padding-left: 20px;
 }
 
 .avatar {
     width: 35px;
     height: 35px;
-    background-color: var(--bg-dark);
+    background-color: var(--paper-white);
     border-radius: 4px;
+}
+
+
+main{
+    display: flex;
+    background-color: var(--paper-white); 
+    min-height: calc(100vh - 70px); 
+}
+
+.dashboard-nav {
+    width: 280px;            
+    min-width: 280px; 
+    background-color: var(--bg-dark); 
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+    border-right: 2px solid var(--neon-pink);
+}
+
+
+.dashboard-nav .nav-link {
+    color: white;
+    font-size: 0.8rem; 
+    margin-bottom: 10px;
+}
+
+.dashboard-nav .nav-link.active {
+    background-color: var(--neon-pink) !important;
+}
+
+.title-dashboard span{
+    font-family: var(--font-main);
+    font-size: 15px !important;
+    color: var(--grid-gray);
+}
+
+.user-text{
+    color: var(--paper-white);
+    align-items: center;
+}
+
+.dashboard-nav i{
+    color: var(--paper-white);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    color: var(--paper-white);
 }
